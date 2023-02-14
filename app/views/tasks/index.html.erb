@@ -1,0 +1,8 @@
+<div class="container mt-3">
+  <h1>My tasks 🚨</h1>
+  <% @tasks.each do |task| %>
+  <ul>
+    <li><%=link_to task.title, task_path(task)%></li>
+  </ul>
+  <% end %>
+</div>
